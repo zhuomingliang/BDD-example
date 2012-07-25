@@ -1,0 +1,18 @@
+default:
+  formatter:
+    name:                     pretty
+    parameters:
+      decorated:              true
+      verbose:                false
+      time:                   true
+      language:               zh-CN
+      output_path:            null
+      multiline_arguments:    true
+  context:
+    parameters:
+      browser:          firefox
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url:     https://myid.24gold.hk/
+      selenium2:    ~
+      default_session: selenium2
